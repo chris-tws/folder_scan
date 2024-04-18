@@ -13,11 +13,11 @@ def count_files_in_directory(directory):
         return -1  
   
 def show_notification():  
-    root = tk.Tk()  
-    root.withdraw()  # We don't want a full GUI, so keep the root window from appearing  
-    messagebox.showinfo("Notification", "The number of files has not changed.")  
-    root.destroy()  
-    # print("The number of files has not changed.")
+    # root = tk.Tk()  
+    # root.withdraw()  # We don't want a full GUI, so keep the root window from appearing  
+    # messagebox.showinfo("Notification", "The number of files has not changed.")  
+    # root.destroy()  
+    print("The number of files has not changed.")
   
 def monitor_directory(directory, interval_minutes):  
     prev_count = count_files_in_directory(directory)  
